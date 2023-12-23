@@ -1,6 +1,6 @@
 'use client'
-import { MyButton, MyComponent, Test } from "./components/test/test";
 import {useState} from 'react'
+import { Home } from './components/home';
 export default function App() {
   const [count,setCount]  = useState(0)
 
@@ -11,8 +11,7 @@ export default function App() {
 
     return (
         <>
-            <MyButton count={count} onClick={()=>aaa()}/>
-            <MyButton count={count} onClick={()=>aaa()}/>
+        <Home/>
         </>
     );
 }
