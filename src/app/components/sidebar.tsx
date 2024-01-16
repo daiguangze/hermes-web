@@ -5,11 +5,10 @@ import RoleIcon from "../icons/role.svg";
 import {Path} from "@/app/constants";
 import styles from "./sidebar.module.scss";
 
-export function SideBar() {
 
-    const navigate = useNavigate();
-
-    return (
+export function SideBar(){
+    const navigate = useNavigate()
+    return(
         <div className={styles.sidebar}>
             <div className={styles["sidebar-header"]}>
                 <ChatGPTIcon/>
@@ -30,5 +29,5 @@ export function SideBar() {
             </div>
 
         </div>
-    )
+    );
 }

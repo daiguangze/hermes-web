@@ -1,6 +1,6 @@
 'use client'
 import {useState} from 'react'
-import { Home } from './components/home';
+import { Home , Screen} from './components/home';
 export default function App() {
   const [count,setCount]  = useState(0)
 
