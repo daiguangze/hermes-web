@@ -2,6 +2,9 @@
 
 import styles from "./home.module.scss";
 import {SideBar} from "./sidebar";
+import {useAppConfig} from "../store/config";
+
+
 
 import {
     HashRouter as Router,
@@ -15,8 +18,9 @@ const Chat = dynamic(async () => (await import("./chat/chat")).Chat);
 const Role = dynamic(async () => (await import("./role/role")).Role);
 
 export function Screen() {
+    const config = useAppConfig();
     return (
-        <div className={styles.container}>
+        <div className={`${config.tightBorder ? styles["tight-container"] : styles.container}`}>
             {/* 工具菜单 */}
             <SideBar/>
 
