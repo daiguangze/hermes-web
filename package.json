@@ -15,7 +15,9 @@
     "sass": "^1.69.5",
     "@svgr/webpack": "^6.5.1",
     "react-router-dom": "^6.10.0",
-    "zustand": "^4.3.6"
+    "zustand": "^4.3.6",
+    "antd": "^5.6.1",
+    "re-resizable": "^6.9.9"
   },
   "devDependencies": {
     "@types/node": "^20",

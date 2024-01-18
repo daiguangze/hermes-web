@@ -1,8 +1,8 @@
 "use client";
 
 import styles from "./home.module.scss";
-import {SideBar} from "./sidebar";
-import {useAppConfig} from "../store/config";
+import {SideBar} from "../../components/sidebar";
+import {useAppConfig} from "../../store/config";
 
 
 
@@ -14,8 +14,8 @@ import {
 import dynamic from "next/dynamic";
 import {Path} from "@/app/constants";
 
-const Chat = dynamic(async () => (await import("./chat/chat")).Chat);
-const Role = dynamic(async () => (await import("./role/role")).Role);
+const Chat = dynamic(async () => (await import("../chat/chat")).Chat);
+const Role = dynamic(async () => (await import("../role/role")).Role);
 
 export function Screen() {
     const config = useAppConfig();
